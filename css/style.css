@@ -1,0 +1,261 @@
+*{margin: 0px; padding: 0px ;}
+
+header, main, footer, nav, aside, section, div  {
+    display: block;
+}
+
+body{
+    background-image: url("../images/background.JPG") ;
+    background-repeat: repeat-x;
+    background-attachment:fixed
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #3F3F3F;
+    min-height: 935px;
+}
+
+header{
+    height: 100px;
+    background-color: #3F3F3F;
+    padding-top: 1px;
+}
+
+#logo{
+    display: block;
+    background-image: url("../images/logo.png");
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    margin-top: 18px;
+    height: 44px;
+    width: 44px;        
+}
+
+#aside-and-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+#aside-and-box > main{
+    height: 834px;
+    width: 813px;
+    background-color: white;
+    position: relative;
+    display: flex;
+}
+
+#aside-and-box > main > :first-child{
+    position: absolute;
+    top: 88px;
+    left: 22px;
+    height: 301px;
+    width: 179px;
+    border:1px solid #000;
+
+}
+
+#aside-and-box > main > :nth-child(2){
+    position: absolute;
+    top: 20px;
+    height: 288px;
+    width: 408px;
+    border:1px solid #000;
+    left:353px;
+}
+
+#aside-and-box > main > :last-child{
+    position: absolute;
+    height: 298px;
+    width: 178px;
+    border:1px solid #000;
+    top: 445px;
+    left: 283px ;
+}
+
+#aside-and-box > aside{
+    height: 834px;
+    background-color: white;
+    width: 183px;
+    display: flex;
+}
+
+aside > ul{
+    font-family:Arial, Helvetica, sans-serif ;
+    margin: auto;
+}
+
+ul li a:link{
+    text-decoration: none;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+ul li a:active{
+    color: red;
+}
+
+footer{
+    height: 66px;
+    width: 100%;
+    background-color: #3F3F3F;
+    margin-bottom: 0px;
+}
+
+/*----------------------layout2-----------------------------------*/
+
+nav{
+    background-image: url("../images/nav.JPG");
+    height: 184px;
+    padding-top: 1px;
+}
+
+.nav2-3{
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav2-3 li{
+    margin-left: 81px;
+    margin-top: 70px;
+}
+
+.nav2-3 li a{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+}
+
+#aside-and-box-lay2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#aside-and-box-lay2 > main{
+    background-color: white;
+    width: 835px;
+    display: flex;  
+    height: 650px;
+    position: relative;
+}
+
+#aside-and-box-lay2 > aside{
+    height: 650px;
+    background-color: white;
+    width: 161px;
+    display:flex ;
+}
+
+ #aside-and-box-lay2 > main > :first-child{
+    position: absolute;
+    border:1px solid #000;
+    left:472px;
+    top: 66px;
+    height: 88px;
+    width: 121px;
+}
+
+#aside-and-box-lay2 > main > :nth-child(2){
+    position: absolute;
+    border:1px solid #000;
+    left: 633px;
+    top: 66px;
+    height: 88px;
+    width: 121px;
+}
+
+#aside-and-box-lay2 > main > :nth-child(3){
+    position: absolute;
+    border:1px solid #000;
+    height: 112px;
+    width: 266px;
+    left: 55px;
+    top: 411px;
+}
+
+#aside-and-box-lay2 > main > :last-child{
+    position: absolute;
+    border:1px solid #000;
+    top: 234px;
+    left: 344px;
+    height: 288px;
+    width: 413px;
+}
+
+#fotter2{
+    position: fixed;
+    bottom: 0px;
+}
+
+/*-----------------LAYOUT-3----------------*/
+
+#layout3 > nav{
+    background-image: url("../images/background3.JPG");
+    height: 184px;
+}
+
+#layout3 > main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;;    
+}
+
+#layout3 > main > article{
+    height: 315px;
+    width: 203px;
+    margin-left: 87px;
+    margin-top: 80px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+#layout3 > main > article > p{
+    font-size: 260px;
+    margin-left: 7px;
+    color: transparent;
+}
+
+#layout3 > nav > button{
+    height: 40px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 60px;
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    border: none;
+    float: left;
+}
+
+@media(max-width:577px){
+    #wrapper, #layout3 > nav{
+        max-width: 577px;
+    }
+
+    #layout3 > nav > a{
+        background-image: url("../images/hamburger.png");
+        background-repeat: no-repeat; 
+        height: 60px;
+        display: block;
+        margin-left: 10px;
+    }
+
+    #layout3 > nav > ul{
+        display: none;
+    }
+
+    #layout3 > main > article{
+        margin-left: 35px;
+    }
+
+    button{
+        display: none;
+    }
+
+    footer{
+        width: 577px;
+    }
+    
+}
